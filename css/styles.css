@@ -1,0 +1,41 @@
+/* Оформление стилей */
+/* body {
+    color: orange;
+} */
+
+.green-text {
+    color: green;
+}
+
+/* * {
+    color: #71d7ff;
+} */
+
+img {
+    border: 2px solid #000;
+}
+
+#main-title {
+    font-family: 'Helvetica', sans-serif;
+}
+
+ul li {
+    font-weight: bold;
+}
+
+div > span {
+    color: #00ff00;
+}
+
+p + h2 {
+    color: red;
+}
+
+a[target] {
+    color: teal;
+}
+
+a:hover {
+    color: red;
+    text-decoration: none;
+}
