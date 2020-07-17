@@ -1,0 +1,12 @@
+/* Стили к страничке "Барбершоп"*/
+:root {
+    --white:  #FFFFFF;
+    --dark:   #303030;
+    --orange: #FF6C00;
+    --gray:   #9DA4BD;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: var(--dark);
+}
