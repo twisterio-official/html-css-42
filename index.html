@@ -61,17 +61,19 @@
 
         <!--о нас -->
         <section class="about-us">
-            <ul>
-                <li><img src="./images/about-us-img-1.png" alt="бритье" width="270" height="445"></li>
-                <li><img src="./images/about-us-img-2.png" alt="бритье" width="270" height="445"></li>
-            </ul>
+            <div class="container d-flex">
+                <ul class="col-50 d-flex mr-30">
+                    <li class="mr-30"><img src="./images/about-us-img-1.png" alt="бритье" width="270" height="445"></li>
+                    <li><img src="./images/about-us-img-2.png" alt="бритье" width="270" height="445"></li>
+                </ul>
 
-            <div>
-                <p class="section-subtitle">О НАС</p>
-                <h2 class="section-title black-text">Лучший Барбершоп твоего города</h2>
-                <p class="section-text">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
-                <p class="about-us-text">Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
-                <button class="btn black-text">онлайн-запись</button>
+                <div class="col-50">
+                    <p class="section-subtitle">О НАС</p>
+                    <h2 class="section-title black-text">Лучший Барбершоп твоего города</h2>
+                    <p class="section-text">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
+                    <p class="about-us-text">Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
+                    <button class="btn black-text">онлайн-запись</button>
+                </div>
             </div>
         </section>
         
@@ -145,6 +147,68 @@
                 <p class="section-text">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.</p>
             </div>
         </section>
+
+        <!-- наши мастера -->
+        <section class="masters">
+            <p class="section-subtitle">для настоящих ценителей атмосферы</p>
+            <h2 class="section-title black-text">Наши мастера</h2>
+            <ul class="masters-list">
+                <li class="master-item">
+                    <img src="./images/master-1.png" alt="мастер джон смит" width="370" height="346">
+                    <h3 class="master-name">John Smith</h3>
+                    <p class="master-job">Extreme Barber</p>
+                    <ul class="master-socials">
+                        <li><a href="#" aria-label="иконка инстаграма"></a></li>
+                        <li><a href="#" aria-label="иконка твиттера"></a></li>
+                        <li><a href="#" aria-label="иконка фейсбука"></a></li>
+                        <li><a href="#" aria-label="иконка линкедина"></a></li>
+                    </ul>
+                </li>
+                <li class="master-item">
+                    <img src="./images/master-2.png" alt="мастер майкл доу" width="370" height="346">
+                    <h3 class="master-name">Michele Doe</h3>
+                    <p class="master-job">Extreme Barber</p>
+                    <ul class="master-socials">
+                        <li><a href="#" aria-label="иконка инстаграма"></a></li>
+                        <li><a href="#" aria-label="иконка твиттера"></a></li>
+                        <li><a href="#" aria-label="иконка фейсбука"></a></li>
+                        <li><a href="#" aria-label="иконка линкедина"></a></li>
+                    </ul>
+                </li>
+                <li class="master-item">
+                    <img src="./images/master-3.png" alt="мастер алан блек" width="370" height="346">
+                    <h3 class="master-name">Alan Black</h3>
+                    <p class="master-job">Extreme Barber</p>
+                    <ul class="master-socials">
+                        <li><a href="#" aria-label="иконка инстаграма"></a></li>
+                        <li><a href="#" aria-label="иконка твиттера"></a></li>
+                        <li><a href="#" aria-label="иконка фейсбука"></a></li>
+                        <li><a href="#" aria-label="иконка линкедина"></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- рабочий процесс -->
+        <section class="work-process">
+            <p class="section-subtitle">На латинском языке “барба” означает “борода”</p>
+            <h2 hidden class="section-title black-text">Рабочий процесс</h2>
+            <ul class="process-gallery">
+                <li>
+                    <img src="./images/work-process-1.png" alt="стрижка под машинку" width="270" height="360">
+                </li>
+                <li>
+                    <img src="./images/work-process-2.png" alt="бритье" width="270" height="360">
+                </li>
+                <li>
+                    <img src="./images/work-process-3.png" alt="мытье головы" width="270" height="360">
+                </li>
+                <li>
+                    <img src="./images/work-process-4.png" alt="бритье опасной бритвой" width="270" height="360">
+                </li>
+            </ul>
+        </section>
+
     </main>
 </body>
 </html>
