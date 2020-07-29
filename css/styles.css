@@ -5,6 +5,7 @@
     --dark-gray:#555555;
     --gray:     #9DA4BD;
     --orange:   #FF6C00;
+    --dark-blue:#191C26;
 }
 
 html {
@@ -36,6 +37,10 @@ img {
     height: auto;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
 .container {
     max-width: 1200px;
     padding: 0 15px;
@@ -53,4 +58,92 @@ img {
 
 .mr-30 {
     margin-right: 30px;
+}
+
+.white-text {
+    color: var(--white);
+}
+
+.section-padding {
+    padding: 130px 0;
+}
+
+.about-us-block {
+    padding: 0 34px;
+}
+
+.section-subtitle {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.gray-subtitle {
+    /* color: rgba(157, 164, 189, 0.6); */
+    color: var(--gray);
+    opacity: 0.6;
+}
+
+.section-subtitle::before {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    background-color: var(--dark);
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.section-title {
+    font-size: 42px;
+    line-height: 49px;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+.section-text {
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: var(--dark-gray);
+    margin-bottom: 20px;
+}
+
+.about-us-text {
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.2px;
+    color: var(--dark-gray);
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.9px;
+    border: 1px solid var(--orange);
+    background-color: transparent;
+    border-radius: 25px;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.price-list {
+    background-color: var(--dark-blue);
+    background-image: url('../images/price-list-bg.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    /* background: var(--dark-blue) url('../images/price-list-bg.png') no-repeat center/cover; */
 }
