@@ -3,7 +3,7 @@
     --white:    #FFFFFF;
     --dark:     #303030;
     --dark-gray:#555555;
-    --gray:     #9DA4BD;
+    --gray:     rgb(157, 164, 189);
     --orange:   #FF6C00;
     --dark-blue:#191C26;
 }
@@ -60,6 +60,14 @@ h1, h2, h3, h4, h5, h6, p {
     margin-right: 30px;
 }
 
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.text-center {
+    text-align: center;
+}
+
 .white-text {
     color: var(--white);
 }
@@ -85,6 +93,11 @@ h1, h2, h3, h4, h5, h6, p {
     /* color: rgba(157, 164, 189, 0.6); */
     color: var(--gray);
     opacity: 0.6;
+}
+
+.section-subtitle.gray-subtitle::before {
+    background-color: var(--gray);
+    opacity: 0.6; 
 }
 
 .section-subtitle::before {
@@ -146,4 +159,72 @@ h1, h2, h3, h4, h5, h6, p {
     background-size: cover;
 
     /* background: var(--dark-blue) url('../images/price-list-bg.png') no-repeat center/cover; */
+}
+
+.prices {
+    padding: 30px 40px;
+    color: var(--gray);
+}
+
+.gradient-type-1 {
+    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.gradient-type-2 {
+    background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
+.price-list-title,
+.master-title {
+    margin-bottom: 44px;
+}
+
+.prices-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+}
+
+.prices-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.divider {
+    flex-grow: 1;
+    margin: 0 6px 8px;
+    height: 1px;
+    background-color: var(--gray);
+    opacity: 0.12;
+}
+
+.masters-list {
+    margin: 0 -15px;
+}
+
+.master-item {
+    max-width: 33.33333%;
+    flex: 0 0 33.33333%;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.master-item img {
+    margin-bottom: 30px;
+}
+
+.master-name {
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    margin-bottom: 8px;
+}
+
+.master-job {
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    color: var(--orange);
+    margin-bottom: 30px;
 }
