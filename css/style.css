@@ -1,0 +1,159 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.first-title {
+    font-size: 18px;
+    line-height: 21px;
+    color: #4B0000;
+    text-align: center;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.first-title::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: #4B0000;
+    bottom: -8px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.second-title {
+    font-size: 18px;
+    line-height: 21px;
+    color: #4B0000;
+    text-align: center;
+}
+
+.second-title span {
+    position: relative;
+}
+
+.second-title span::before,
+.second-title span::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 2px;
+    background-color: #222222;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.second-title span::before {
+    left: -16px;
+}
+
+.second-title span::after {
+    right: -16px;
+}
+
+.third-title {
+    font-size: 18px;
+    line-height: 21px;
+    color: #000F61;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.third-title span {
+    position: relative;
+}
+
+.third-title span::before {
+    content: '';
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    background-image: linear-gradient(180deg, #FEE500 0%, #ADFF00 100%);
+    border-radius: 50%;
+    left: -12px;
+    top: -6px;
+    z-index: -1;
+}
+
+header {
+    background-color: #FF6F60;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-link {
+    line-height: 19px;
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 20px 30px;
+}
+
+.menu-link:hover {
+    background-color: #fc5745;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 38px;
+    background-color: #E7FF79;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.with-submenu::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 8px solid #E7FF79;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    right: 18px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.submenu {
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-width: 186px;
+    position: absolute;
+    background-color: #777;
+}
+
+.menu-item:hover .submenu {
+    display: block;
+}
+
