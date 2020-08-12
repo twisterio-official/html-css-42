@@ -1,0 +1,88 @@
+html {
+    box-sizing: border-box;
+}
+
+:root {
+    --green: #00C673;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
+.submit-form {
+    max-width: 386px;
+    margin: 0 auto;
+    padding: 78px 62px;
+}
+
+::placeholder {
+    color: #777;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.text-field {
+    display: block;
+    width: 100%;
+    border: 1px solid var(--green);
+    font-size: 14px;
+    color: #343434;
+    line-height: 19px;
+    padding: 15px 22px;
+    border-radius: 5px;
+    margin-bottom: 18px;
+}
+
+.form-title {
+    font-size: 18px;
+    margin: 0 0 22px;
+    font-weight: 400;
+}
+
+.field-label {
+    position: relative;
+    padding-left: 26px;
+}
+
+.field-label::before {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+    border: 1px solid var(--green);
+    left: 0;
+    top: 2px;
+}
+
+.check-field:checked + .field-label::before {
+    background-color: var(--green);
+}
+
+.check-field {
+    position: absolute;
+    /* left: -9999px;
+    visibility: hidden; */
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.radio-field + .field-label::before {
+    border-radius: 50%;
+}
+
