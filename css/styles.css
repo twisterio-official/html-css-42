@@ -31,7 +31,7 @@
     --white:    #FFFFFF;
     --dark:     #303030;
     --dark-gray:#555555;
-    --gray:     rgb(157, 164, 189);
+    --gray:     #9da4bd;
     --orange:   #FF6C00;
     --dark-blue:#191C26;
 }
@@ -224,7 +224,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .price-list-title,
-.master-title {
+.master-title,
+.work-process-title {
     margin-bottom: 44px;
 }
 
@@ -318,3 +319,82 @@ h1, h2, h3, h4, h5, h6, p {
     flex: 0 0 25%;
     max-width: 25%;
 }
+
+.contacts {
+    background-color: var(--dark-blue);
+    overflow: hidden;
+}
+
+.contact-form-field {
+    display: block;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid var(--gray);
+    color: var(--white);
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 8px 0;
+}
+
+.contact-form-field:focus {
+    outline: none;
+    border-color: var(--white);
+}
+
+.form-first-row {
+    margin-bottom: 36px;
+}
+
+.form-first-row .col-50:first-child {
+    padding-right: 15px;
+}
+
+.form-first-row .col-50:last-child {
+    padding-left: 15px;
+}
+
+textarea.contact-form-field {
+    margin-bottom: 44px;
+    height: 68px;
+    resize: none;
+}
+
+.contacts-block {
+    padding-left: 100px;
+    position: relative;
+}
+
+.contacts-block::before {
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    background-image: url('../images/contacts-bg.png');
+    background-repeat: no-repeat;
+    left: 30px;
+    top: 0;
+    pointer-events: none;
+}
+
+.address-block {
+    display: flex;
+    flex-direction: column;
+    max-width: 266px;
+    font-style: normal;
+}
+
+.contacts-item {
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: var(--gray);
+    text-decoration: none;
+}
+
+.contacts-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+

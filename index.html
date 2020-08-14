@@ -277,10 +277,10 @@
         </section>
 
         <!-- рабочий процесс -->
-        <section class="work-process">
+        <section class="work-process section-padding">
             <div class="container">
-                <p class="section-subtitle">На латинском языке “барба” означает “борода”</p>
-                <h2 hidden class="section-title black-text">Рабочий процесс</h2>
+                <p class="section-subtitle work-process-title">На латинском языке “барба” означает “борода”</p>
+                <h2 hidden class="section-title">Рабочий процесс</h2>
                 <ul class="process-gallery d-flex">
                     <li>
                         <img src="./images/work-process-1.png" alt="стрижка под машинку" width="270" height="360">
@@ -298,5 +298,43 @@
             </div>
         </section>
     </main>
+
+    <!-- подвал сайта -->
+    <footer>
+        <div class="contacts">
+            <div class="container d-flex">
+                <div class="col-50 section-padding">
+                    <h2 class="section-title white-text">Онлайн-запись</h2>
+                    <form class="contact-form">
+                        <div class="d-flex form-first-row">
+                            <div class="col-50">
+                                <input type="text" class="contact-form-field" name="name" placeholder="Имя*" required>
+                            </div>
+                            <div class="col-50">
+                                <input type="tel" class="contact-form-field" name="phone" placeholder="Телефон*" required>
+                            </div>
+                        </div>
+                        <textarea class="contact-form-field" name="message" placeholder="Сообщение*" required></textarea>
+                        <button class="btn white-text" type="submit">Отправить</button>
+                    </form>
+                </div>
+                <div class="col-50 contacts-block section-padding">
+                    <h2 class="section-title white-text">Контакты</h2>
+
+                    <address class="address-block">
+                        <p class="contacts-item address">ул. Васильковая, 7А Киев, 08132</p>
+                        <a href="tel:+380441111111" class="contacts-item phone">+38 044 111 11 11</a>
+                        <a href="mailto:barbershop@email.com" class="contacts-item email">barbershop@email.com</a>
+                    </address>
+
+                    <p class="section-subtitle">время работы</p>
+                    <p class="contacts-item">Ежедневно с 9:00 до 22:00</p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+
+        </div>
+    </footer>
 </body>
 </html>
