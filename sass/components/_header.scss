@@ -1,0 +1,23 @@
+/* Стили для шапки */
+header {
+    background-color: $red;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+    .logo {
+        font-weight: 600;
+        font-size: 28px;
+    }
+
+    .login-btn {
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: $blue;
+        border: 0;
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 14px;
+    }
+}

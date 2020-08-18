@@ -1,0 +1,7 @@
+/* Миксины */
+
+@mixin pseudo {
+    content: '';
+    position: absolute;
+    display: block;
+}

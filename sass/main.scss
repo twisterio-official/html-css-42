@@ -1,0 +1,16 @@
+/* Главный файл стилей*/
+
+//Шрифт
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+//Хелперы
+@import './helpers/mixins';
+@import './helpers/variables';
+
+//Базовый
+@import './base/base';
+
+//Компоненты
+@import './components/header';
+@import './components/footer';
+@import './components/news';

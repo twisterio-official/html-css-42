@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/* Главный файл стилей*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+/* Миксины */
+/* Переменные */
+/* Базовые стили */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.15;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Стили для шапки */
+header {
+  background-color: #FF6F60;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+
+header .logo {
+  font-weight: 600;
+  font-size: 28px;
+}
+
+header .login-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #263FB2;
+  border: 0;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Стили для подвала */
+/* Стили для компоненты новости */
+.news {
+  padding: 90px 0;
+}
+
+.news-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  position: relative;
+  margin: 0 0 76px;
+}
+
+.news-title::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: #FF6F60;
+  bottom: -16px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/*# sourceMappingURL=main.css.map */
