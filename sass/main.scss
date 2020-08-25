@@ -3,6 +3,9 @@
 //Шрифт
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
+//Вендор
+@import './vendor/bootstrap/bootstrap.scss';
+
 //Хелперы
 @import './helpers/mixins';
 @import './helpers/variables';

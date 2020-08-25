@@ -21,4 +21,22 @@
             margin: auto;
         }
     }
+
+    &-item {
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+
+        &--content {
+           padding: 22px 20px; 
+        }
+
+        &--badge {
+            position: absolute;
+            width: 34px;
+            height: 44px;
+            right: 12px;
+            top: 0;
+            background-color: $red;
+        }
+    }
 }

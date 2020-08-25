@@ -1,23 +1,35 @@
 /* Стили для шапки */
-header {
-    background-color: $red;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-
-    .logo {
-        font-weight: 600;
-        font-size: 28px;
+.header {
+    .top-part {
+        padding: 20px 0;
     }
 
-    .login-btn {
+    &-contacts-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    address {
+        margin: 0;
+    }
+
+    &-contact {
+        line-height: 20px;
+        color: #565656;
+    }
+
+    .contacts-btn {
         display: inline-block;
-        padding: 8px 16px;
-        background-color: $blue;
+        padding: 11px 18px;
+        color: $white;
+        background-color: $red;
+        border-radius: 50px;
+        text-transform: lowercase;
         border: 0;
-        color: #ffffff;
         cursor: pointer;
-        font-size: 14px;
+        line-height: 22px;
     }
 }

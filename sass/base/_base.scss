@@ -15,13 +15,6 @@ body {
     margin: 0;
     font-family: $base-font;
     line-height: 1.15;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.d-flex {
-    display: flex;
+    color: $base-color;
+    overflow-x: hidden;
 }
