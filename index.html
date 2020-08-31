@@ -61,9 +61,19 @@
         <!--о нас -->
         <section class="about-us section-padding">
             <div class="container d-flex">
-                <ul class="col-50 d-flex">
-                    <li class="mr-30"><img src="./images/about-us-img-1.png" alt="бритье" width="270" height="445"></li>
-                    <li><img src="./images/about-us-img-2.png" alt="бритье" width="270" height="445"></li>
+                <ul class="col-50 d-flex mobile-hidden-flex">
+                    <li class="mr-30">
+                        <picture>
+                            <source srcset="./images/about-us-img-1-desktop.png" media="(min-width: 1024px)" />
+                            <img src="./images/about-us-img-1.png" alt="бритье" width="270" height="445">
+                        </picture>
+                    </li>
+                    <li>
+                        <picture>
+                            <source srcset="./images/about-us-img-2-desktop.png" media="(min-width: 1024px)" />
+                            <img src="./images/about-us-img-2.png" alt="бритье" width="270" height="445">
+                        </picture>
+                    </li>
                 </ul>
 
                 <div class="col-50 about-us-block">
@@ -134,7 +144,7 @@
         </section>
 
         <!-- цифрами о нас -->
-        <section class="numbers">
+        <!-- <section class="numbers">
             <ul class="numbers-list">
                 <li class="numbers-item">
                     <h4 class="numbers-item-value">600 <sub>+</sub></h4>
@@ -159,7 +169,7 @@
                 <h2 class="section-title black-text">Почему приходят именно к нам?</h2>
                 <p class="section-text">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.</p>
             </div>
-        </section>
+        </section> -->
 
         <!-- наши мастера -->
         <section class="masters section-padding">

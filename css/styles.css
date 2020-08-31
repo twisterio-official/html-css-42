@@ -71,13 +71,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 .container {
     max-width: 1200px;
-    padding: 0 15px;
+    padding: 0 30px;
     margin: 0 auto;
-}
-
-.col-50 {
-    max-width: 50%;
-    flex: 0 0 50%;
 }
 
 .d-flex {
@@ -101,11 +96,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .section-padding {
-    padding: 130px 0;
-}
-
-.about-us-block {
-    padding: 0 34px;
+    padding: 84px 0;
 }
 
 .section-subtitle {
@@ -139,9 +130,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .section-title {
-    font-size: 42px;
+    font-size: 28px;
     font-family: 'Raleway', sans-serif;
-    line-height: 49px;
+    line-height: 33px;
     letter-spacing: 0.5px;
     margin-bottom: 20px;
 }
@@ -398,3 +389,49 @@ textarea.contact-form-field {
     margin-bottom: 20px;
 }
 
+.mobile-hidden,
+.mobile-hidden-flex {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-hidden {
+        display: block;
+    }
+
+    .mobile-hidden-flex {
+        display: flex;
+    }
+
+    .col-50 {
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+
+    .container {
+        padding: 0 40px;
+    }
+
+    .section-padding {
+        padding: 100px 0;
+    }
+
+    .section-title {
+        font-size: 42px;
+        line-height: 49px;
+    }
+}
+
+@media screen and (min-width: 1024px) { 
+    .container {
+        padding: 0 15px;
+    } 
+
+    .section-padding {
+        padding: 130px 0;
+    }
+    
+    .about-us-block {
+        padding: 0 34px;
+    }
+}
