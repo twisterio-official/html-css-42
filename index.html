@@ -9,55 +9,66 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <!-- Шапка сайта -->
-    <header>
-        <nav>
-            <a href="/" class="logo" aria-label="логотип">
-                <img src="./images/logo.png" alt="логотип" width="69" height="56">
-            </a>
+    <!-- Первый экран -->
+    <div class="first-screen">
+        <div class="container">
+            <!-- Шапка сайта -->
+            <header class="header">
+                <nav class="d-flex">
+                    <a href="/" class="logo" aria-label="логотип">
+                        <img src="./images/logo.svg" alt="логотип" width="69" height="56">
+                    </a>
 
-            <!-- Главное меню -->
-            <ul class="main-menu">
-                <li class="main-menu-item">
-                    <a href="#" class="main-menu-link">О нас</a>
-                </li>
-                <li class="main-menu-item">
-                    <a href="#" class="main-menu-link">Цены и услуги</a>
-                </li>
-                <li class="main-menu-item">
-                    <a href="#" class="main-menu-link">Мастера</a>
-                </li>
-                <li class="main-menu-item">
-                    <a href="#" class="main-menu-link">Контакты</a>
-                </li>
-            </ul>
-        </nav>
+                    <!-- Главное меню -->
+                    <ul class="main-menu mobile-hidden-flex">
+                        <li class="main-menu-item">
+                            <a href="#" class="main-menu-link">О нас</a>
+                        </li>
+                        <li class="main-menu-item">
+                            <a href="#" class="main-menu-link">Цены и услуги</a>
+                        </li>
+                        <li class="main-menu-item">
+                            <a href="#" class="main-menu-link">Мастера</a>
+                        </li>
+                        <li class="main-menu-item">
+                            <a href="#" class="main-menu-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
 
-        <address class="header-phone">
-            <a href="tel:+380441111111">+38 044 111 11 11</a>
-        </address>
-        <button class="btn white-text">Онлайн запись</button>
-    </header>
+                <div class="header-right-part mobile-hidden">
+                    <button class="btn white-text">Онлайн запись</button>
+                    <address class="header-phone">
+                        <a href="tel:+380441111111">+38 044 111 11 11</a>
+                    </address>
+                </div>
 
+                <button class="mobile-menu-trigger" aria-label="кнопка мобильного меню">
+                    <span class="mobile-menu-line"></span>
+                </button>
+            </header>
+
+            <!-- Херо блок -->
+            <section class="hero-section">
+                <div class="mobile-hidden hero-socials-list-wrapper">
+                    <ul class="hero-socials-list">
+                        <li><a href="#" lang="en">Instagram</a></li>
+                        <li><a href="#" lang="en">Youtube</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="section-subtitle gray-subtitle" lang="en">A hair salon for men in Kyiv</p>
+                    <h1 class="hero-title" lang="en">BarberShop</h1>
+                    <p class="hero-subtitle">
+                        Мы эксперты в модных мужских стрижках. <br>
+                        Работаем быстро, осторожно и со вкусом.
+                    </p>
+                </div> 
+            </section>
+        </div>
+    </div>
+    
     <main>
-        <!-- Первый экран -->
-        <section class="hero-section">
-            <div>
-                <ul class="hero-socials-list">
-                    <li><a href="#" lang="en">Instagram</a></li>
-                    <li><a href="#" lang="en">Youtube</a></li>
-                </ul>
-            </div>
-            <div>
-                <p class="section-subtitle" lang="en">A hair salon for men in Kyiv</p>
-                <h1 class="hero-title" lang="en">BarberShop</h1>
-                <p class="hero-subtitle">
-                    Мы эксперты в модных мужских стрижках. <br>
-                    Работаем быстро, осторожно и со вкусом.
-                </p>
-            </div> 
-        </section>
-
         <!--о нас -->
         <section class="about-us section-padding">
             <div class="container d-flex">
@@ -346,5 +357,7 @@
 
         </div>
     </footer>
+
+
 </body>
 </html>
